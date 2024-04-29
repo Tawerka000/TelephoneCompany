@@ -1,0 +1,13 @@
+﻿<Window x:Class="TelephoneCompany.Views.MessageView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TelephoneCompany.Views"
+        mc:Ignorable="d"
+        Height="170" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin ="20" FontStyle="Italic" Text="{Binding MessageText}"></TextBlock>
+        <Button Content="Ok" VerticalAlignment="Bottom" Height="40" Margin="100, 10" Command="{Binding CloseWindow}"></Button>
+    </Grid>
+</Window>
